@@ -96,6 +96,23 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* events */
+
+#events .table {
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
 /* game library cards */
 
 #new-games .card, 
@@ -152,36 +169,47 @@ h2 {
     } */
 
 
-    /* media queries */
+/* media queries */
 
-    /* medium devices - tablets (768px and up) */
-    @media screen and (min-width: 768px) {
-        /* make all service cards same height */
-        #services .card-body {
-            min-height: 191px;
-        }
+/* small devices - (576px and up) */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
     }
+    .student-discount {
+        font-size: 1rem;
+    }
+}
 
-    /* large devices - small laptops (992px and up) */
-    @media screen and (min-width: 992px) {
-        /* make all service cards same height */
-        #services .card-body {
-            min-height: auto;
-        }
+/* medium devices - tablets (768px and up) */
+@media screen and (min-width: 768px) {
+    /* make all service cards same height */
+    #services .card-body {
+        min-height: 191px;
     }
+}
 
-    /* xl devices - large desktops (1200px and up) */
-    @media screen and (min-width: 1200px) {
-        /* make all service cards same height */
-        #services .card-body {
-            min-height: 220px;
-        }
+/* large devices - small laptops (992px and up) */
+@media screen and (min-width: 992px) {
+    /* make all service cards same height */
+    #services .card-body {
+        min-height: auto;
     }
+}
 
-    /* xxl devices - larger laptops (1400px and up) */
-    @media screen and (min-width: 1400px) {
-        /* make all service cards same height */
-        #services .card-body {
-            min-height: 195px;
-        }
+/* xl devices - large desktops (1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards same height */
+    #services .card-body {
+        min-height: 220px;
     }
+}
+
+/* xxl devices - larger laptops (1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards same height */
+    #services .card-body {
+        min-height: 195px;
+    }
+}
